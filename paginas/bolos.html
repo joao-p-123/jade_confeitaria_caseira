@@ -8,9 +8,9 @@
         
             body{
                 background-image: url(../img/blfundo.png);
-                background-size:100%;
                 background-position: center center;
                 background-repeat: no-repeat;
+                background-size:cover;
             
                 
             }
@@ -73,11 +73,14 @@
             }
 
             .btncompra{
-                text-align:left;                           
+                text-align:left;
+                border: 100px; 
                 background-color: rgb(105, 255, 68);
                 width: 120px;
                 height: 28px;
                 margin-top: auto;
+                box-sizing: border-box;
+                border-radius: 20px;
                 
             }
            
@@ -95,7 +98,43 @@
                 font-style:italic;
                 color: red;
             }
+            .volta{
+                text-align:center; 
+                width: 90px;
+                height: 20px;
+                background-color: rgb(177, 10, 166);
+                border: 100px;   
+            }
+            .volt li{
+                margin-top: -2%;
+                text-align:center; 
+                font-style:unset;
+                font-family: Arial, Helvetica, sans-serif;
+                color: beige;
 
+            }
+            @media(max-width: 1000px){
+                .content{
+                    width: 45%;
+                }
+            }
+            @media(max-width: 750px){
+                .content{
+                    width: 100%;
+                }
+            }
+
+            @media(max-width: 1000px){
+                .response{
+                    width: 45%;
+                }
+            }
+
+            @media(max-width: 750px){
+                .response{
+                    width: 100%;
+                }
+            }
 
            
                 
@@ -142,7 +181,7 @@
                    
                 </div>
              </div>
-          <button><a href="../index.html"><li>VOLTAR</li></a></button>
+             <button class="volta"><a href="../index.html" class="volt"><li class="vol">VOLTAR</li></a></button> 
          </body>
 
 
